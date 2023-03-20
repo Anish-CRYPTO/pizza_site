@@ -27,7 +27,7 @@ class pizzaController extends AbstractController
 
         $toppings = $CategoryRepository->findAll();
 
-        return $this->render('pizza/homepage.html.twig',
+        return $this->render('pizza/show.html.twig',
             [
             "toppings" => $toppings
             ]);

@@ -1,9 +1,13 @@
 {% extends 'base.html.twig.' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/pizza.css'">
+
+{% endblock %}
 {% block body %}
     {% for toppings in toppings %}
     <ul>
         <li>{{ toppings.name }}</li>
-        <li>{{ toppings. }}</li>
+        <li><img src="{{ toppings.image }}"></li>
     </ul>
     {% endfor %}
 {% endblock %}
